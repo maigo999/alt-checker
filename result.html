@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Img Alt Checker</title>
+    <!-- 独自のスタイルシートを読み込み -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="pageTitle">Scan Results</h1>
+    <div class="button-container">
+      <button id="downloadCSV" class="button green">Download CSV</button>
+    </div>
+    <!-- 結果表示領域 -->
+    <div id="controls">
+      <!-- 新規追加: alt属性がないもののみ表示するためのチェックボックス -->
+      <input type="checkbox" id="filterAltMissing">
+      <label for="filterAltMissing">alt属性がないもののみ表示</label>
+    </div>
+
+    <div id="resultsContainer">
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <!-- ヘッダーはJavaScriptで動的に設定 -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ここにJavaScriptで行（tr）が追加されます -->
+        </tbody>
+      </table>
+    </div>
+
+    <script type="module" src="result.js"></script>
+  </body>
+</html> 

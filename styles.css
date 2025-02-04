@@ -1,0 +1,147 @@
+/* ベーススタイル */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* ヘッディング */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ボタンスタイル */
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button.green {
+  background-color: #28a745;
+}
+
+.button.green:hover {
+  background-color: #218838;
+}
+
+/* テーブルコンテナ */
+.table-container {
+  overflow-x: auto;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-height: calc(100vh - 150px);
+}
+
+/* テーブルスタイル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  word-break: break-all; /* 長いテキストを折り返す */
+}
+
+/* 各カラムの幅を調整 */
+table th:nth-child(1), /* Tag */
+table td:nth-child(1) {
+  width: 8%;
+}
+
+table th:nth-child(2), /* サムネイル */
+table td:nth-child(2) {
+  width: 15%;
+}
+
+table th:nth-child(3), /* SRC */
+table td:nth-child(3) {
+  width: 25%;
+}
+
+table th:nth-child(4), /* ALT */
+table td:nth-child(4) {
+  width: 22%;
+}
+
+table th:nth-child(5), /* Width */
+table td:nth-child(5),
+table th:nth-child(6), /* Height */
+table td:nth-child(6),
+table th:nth-child(7), /* Loading */
+table td:nth-child(7) {
+  width: 10%;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  white-space: nowrap; /* ヘッダーテキストを折り返さない */
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* 画像の余白を削除 */
+}
+
+/* フィルターコンテナ */
+.filter-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  margin-right: 5px;
+}
+
+/* alt属性が未設定の行のスタイル */
+.missing-alt {
+  background-color: #fff3f3 !important;
+}
+
+.missing-alt td {
+  color: #dc3545 !important;
+} 
